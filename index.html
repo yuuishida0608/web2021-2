@@ -16,6 +16,8 @@
 <script src="ex6-9.js"></script>
 <script src="ex6-10.js"></script>
 <script src="ex6-11.js"></script>
+<script src="ex6-12.js"></script>
+<script src="ex6-13.js"></script>
 
 <script src="ex7-1.js"></script>
 
@@ -158,16 +160,29 @@
      
   <br>
   <h1>練習問題6.12</h1>
-  <form name="timer2">
-    <input type="button" value="スタート" onclick="startfnc()"><br>
-    <input type="text" name="moji" size="30" value=""> </form>
+  <!--setTimeout-->
+  
+  <form name="timer1">
+    <input type="button" value="スタート" onclick="hyoji1()">
+    <br>
+    <input type="text" name="moji1" size="30" value="">
+  </form>
   <br>
+
+  <h1>練習問題6-13</h1>
+    <form><input type="button" value="3秒で変更" 
+      onclick="timechange();setTimeout('returnimg()',3000);"></form>
+    <br>
+    <img src='./image/keiei_small.jpg' id="timechg" alt="Jikannkirikae" class="imagechange">
+  
+  
   <h1>練習問題7.1</h1>
   <input type="button" value="あいさつ" onclick="sayhello71();">
   <p>誰？<input type="text" id="who71"></p>
 
   
   
+
   
 </body>
   </html>
